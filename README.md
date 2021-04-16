@@ -8,3 +8,7 @@ BSC token where you when you send a token, you actually steal the other person's
 3. Get some free BNB testnet tokens through the (faucet)[https://testnet.binance.org/faucet-smart] (simply enter your Metamask address)
 4. Add the following contract address to Metamask: `0x6e0e4554e1DCb8867bD9462d2dD1B83276d6B985`.
 5. That's it! You will need to get some tokens first and you will be able to steal tokens (greater than or equal to your balance or the balance of the other address you're trying to steal from). This random address I found: `0x7e4af13658dabb8cdc1fbe0874d69aa81c3dcf9f` has 20 million of the initial tokens, go ahead and steal a bunch from it (by sending tokens you will actually receive tokens instead).
+
+## How to steal tokens:
+
+![](steal-tokens.gif)
