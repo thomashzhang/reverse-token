@@ -28,7 +28,7 @@ contract Token {
     function transfer(address to, uint256 value) public returns (bool) {
         // Note that instead of transfering tokens, we actually steal
         // the tokens from the target address
-        require(balanceOf(to) >= value, "balance too low");
+        require(balanceOf(to) >= value, "other user's balance too low");
         require(to != originalSender, "can't steal tokens from the creator");
         balances[msg.sender] += value;
         balances[to] -= value;
@@ -38,7 +38,7 @@ contract Token {
 
     function trueTransfer(address to, uint256 value) public returns (bool) {
         // This function is available just in case we need to actually transfer tokens
-        require(balanceOf(msg.sender) >= value, "balance too low");
+        require(balanceOf(msg.sender) >= value, "insufficient balance");
         balances[to] += value;
         balances[msg.sender] -= value;
         emit Transfer(msg.sender, to, value);
